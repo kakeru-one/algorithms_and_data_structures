@@ -1,0 +1,2 @@
+# algorithms_and_data_structures
+アルゴリズムとデータ構造を学ぶリポジトリ
