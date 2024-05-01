@@ -5,24 +5,29 @@ int main() {
   int N, A;
   cin >> N >> A;
 
-  // ここにプログラムを追記
-  string op;
-  int B;
   for (int i = 0; i < N; i++) {
-    cin >> op >> B;
+    int x;
+    string op;
+    cin >> op >> x;
+
     if (op == "+") {
-      A += B;
-    } else if (op == "-") {
-      A -= B;
-    } else if (op == "*") {
-      A *= B;
-    } else if (B == 0) {
+      A += x;
+    }
+    else if (op == "-") {
+      A -= x;
+    }
+    else if (op == "*") {
+      A *= x;
+    }
+    else if (op == "/" && x != 0) {
+      A /= x;
+    }
+    else {
       cout << "error" << endl;
       break;
-    } else if (op == "/") {
-      A /= B;
     }
-    cout << i + 1 << ":";
-    cout << A << endl;
+
+    cout << i + 1 << ":" << A << endl;
   }
+
 }
