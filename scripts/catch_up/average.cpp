@@ -5,20 +5,40 @@ int main() {
   int N;
   cin >> N;
 
-  vector <int> scores(N);
+  // N要素の配列
+  vector<int> A(N);
 
+  // 入力処理
   for (int i = 0; i < N; i++) {
-    cin >> scores.at(i);
+    cin >> A.at(i);
   }
 
-  int average_score = 0;
+  // 合計点
+  int sum = 0;
+
+  // 合計点を計算
   for (int i = 0; i < N; i++) {
-    average_score += scores.at(i);
+
+    // ①ここにプログラムを追記
+    sum += A.at(i);
+
   }
 
-  average_score /= N;
+  // 平均点
+  int mean = sum / N;
 
+  // 平均点から何点離れているかを計算して出力
   for (int i = 0; i < N; i++) {
-    cout << abs(average_score - scores.at(i)) << endl;
+
+    // ②ここにプログラムを追記
+    // 負の数を出力しないように注意
+    if (A.at(i) > mean) {
+      cout << A.at(i) - mean << endl;
+    }
+    else {
+      cout << mean - A.at(i) << endl;
+    }
+
   }
+
 }
