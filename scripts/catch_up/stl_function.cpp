@@ -2,27 +2,11 @@
 using namespace std;
 
 int main() {
-  int A, B, C;
-  cin >> A >> B >> C;
+  int a, b, c;
+  cin >> a >> b >> c;
 
-  int min_integer;
-  int max_integer;
+  int maximum = max(max(a, b), c); // 最大値を計算
+  int minimum = min(min(a, b), c); // 最小値を計算
 
-  if (min(A, B) == A) {
-    min_integer = A;
-    max_integer = B;
-  } else {
-    min_integer = B;
-    max_integer = A;
-  }
-
-  if (C > max_integer) {
-    max_integer = C;
-  }
-
-  if (C < min_integer) {
-    min_integer = C;
-  }
-
-  cout << max_integer - min_integer << endl;
+  cout << maximum - minimum << endl;
 }
