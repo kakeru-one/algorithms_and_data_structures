@@ -1,2 +1,9 @@
-scripts/*
-!/scripts/hello.cpp
+scripts/catch_up/*
+!/scripts/catch_up/hello.cpp
+!/scripts/catch_up/takoyaki.cpp
+!/scripts/catch_up/multiple_operator.cpp
+!/scripts/catch_up/bar_graph.cpp
+!/scripts/catch_up/calculator.cpp
+!/scripts/catch_up/while.cpp
+!/scripts/catch_up/average.cpp
+!/scripts/catch_up/stl_function.cpp
