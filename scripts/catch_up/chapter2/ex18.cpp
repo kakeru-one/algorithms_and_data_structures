@@ -11,13 +11,13 @@ int main() {
   }
 
   // (ここで"試合結果の表"の2次元配列を宣言)
-  vector<vector<string>> results(N, vector<string>(N, "-"));
+  vector<vector<char>> results(N, vector<char>(N, '-'));
 
   // resultsに試合結果を格納する
   for (int i = 0; i < M; i++) {
     // 添え字は0から始まるため、-1する。
-    results.at(A.at(i) - 1).at(B.at(i) - 1) = "o";
-    results.at(B.at(i) - 1).at(A.at(i) - 1) = "x";
+    results.at(A.at(i) - 1).at(B.at(i) - 1) = 'o';
+    results.at(B.at(i) - 1).at(A.at(i) - 1) = 'x';
   }
 
   // resultsに格納した試合結果の表を出力する。
