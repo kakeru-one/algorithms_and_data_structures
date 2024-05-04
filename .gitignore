@@ -1,2 +1,4 @@
 scripts/catch_up/*
 /scripts/subjects_in_book/output
+!/scripts/catch_up/chapter1
+!/scripts/catch_up/chapter2
