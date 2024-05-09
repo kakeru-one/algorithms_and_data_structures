@@ -68,6 +68,11 @@
     "map": "cpp",
     "stacktrace": "cpp",
     "iostream": "cpp",
-    "__bit_reference": "cpp"
+    "__bit_reference": "cpp",
+    "bitset": "cpp",
+    "set": "cpp",
+    "unordered_set": "cpp",
+    "algorithm": "cpp",
+    "format": "cpp"
   }
 }
