@@ -67,6 +67,7 @@
     "deque": "cpp",
     "map": "cpp",
     "stacktrace": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "__bit_reference": "cpp"
   }
 }
