@@ -66,6 +66,7 @@
     "vector": "cpp",
     "deque": "cpp",
     "map": "cpp",
-    "stacktrace": "cpp"
+    "stacktrace": "cpp",
+    "iostream": "cpp"
   }
 }
