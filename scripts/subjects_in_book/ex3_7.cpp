@@ -29,13 +29,12 @@ int main() {
           // 「+」が存在した時は、次の数は一桁から始めたいので、tmpを初期化する必要がある。
           tmp = 0;
         }
-        if (i == N - 2) {
-          tmp *= 10;
-          tmp += S[N - 1] - '0';
-          answer += tmp;
-          tmp = 0;
-        }
       }
+      // N-1の時の場合を考慮して、ループ終わりに加算する
+      tmp *= 10;
+      tmp += S[N - 1] - '0';
+      answer += tmp;
+      tmp = 0;
     }
     
     cout << answer << endl;
