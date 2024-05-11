@@ -7,12 +7,12 @@ int main() {
     cin >> S;
     int N = S.size();
 
-    int tmp = 0;
+    long long tmp = 0;
     long long answer = 0;
 
     // +の配置を考えた時の場合の数は、2^(N-1)となる。(+の部分集合を考える)
     // 1 << N - 1の結果が、2^(N-1)となる。よって、bitは全ての+の配置のケースを表す。
-    for (int bit = 0; bit < (1 << N - 1); ++bit)
+    for (int bit = 0; bit < (1 << (N - 1)); ++bit)
     {
       // 文字列 S の各文字間の隙間に「+」を挿入するかどうかを決定する。
       for (int i = 0; i < N - 1; ++i) {
@@ -33,6 +33,7 @@ int main() {
           tmp *= 10;
           tmp += S[N - 1] - '0';
           answer += tmp;
+          tmp = 0;
         }
       }
     }
