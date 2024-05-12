@@ -66,6 +66,13 @@
     "vector": "cpp",
     "deque": "cpp",
     "map": "cpp",
-    "stacktrace": "cpp"
+    "stacktrace": "cpp",
+    "iostream": "cpp",
+    "__bit_reference": "cpp",
+    "bitset": "cpp",
+    "set": "cpp",
+    "unordered_set": "cpp",
+    "algorithm": "cpp",
+    "format": "cpp"
   }
 }

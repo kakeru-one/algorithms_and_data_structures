@@ -9,3 +9,4 @@ scripts/catch_up/*
 !/scripts/catch_up/stl_function.cpp
 !/scripts/catch_up/ex15.cpp
 !/scripts/catch_up/plus_and_minus.cpp
+/scripts/subjects_in_book/output
