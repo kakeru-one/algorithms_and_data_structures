@@ -11,11 +11,11 @@ int count_report_num(vector<vector<int> > &children, int x) {
 
   // (ここに追記して再帰関数を実装する)
   int report_num = 0;
+  // 子組織が提出してきた報告書の枚数を足していく。
   for (int c : children.at(x)) {
-    // (子組織 c のもとに揃った報告書の枚数 + 1) が、c が親に渡す報告書の枚数
-    report_num = report_num + count_report_num(children, c) + 1;
+    report_num += count_report_num(children, c);
   }
-  return report_num;
+  return report_num + 1;
 }
 
 // これ以降の行は変更しなくてよい
