@@ -73,6 +73,7 @@
     "set": "cpp",
     "unordered_set": "cpp",
     "algorithm": "cpp",
-    "format": "cpp"
+    "format": "cpp",
+    "span": "cpp"
   }
 }
