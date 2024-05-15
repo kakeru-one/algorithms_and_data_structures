@@ -1,5 +1,6 @@
 scripts/catch_up/*
-/scripts/subjects_in_book/output
+/scripts/subjects_in_book/chapter3/output
+/scripts/subjects_in_book/chapter4/output
 !/scripts/catch_up/chapter1
 !/scripts/catch_up/chapter2
 /scripts/catch_up/chapter2/output
