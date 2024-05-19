@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int fibo(int N, vector<int> &memo) {
+int fibo(int N, vector<long long> &memo) {
   // ベースケース
   if (N == 0) return 0;
   else if (N == 1) return 0;
@@ -16,6 +16,6 @@ int fibo(int N, vector<int> &memo) {
 int main() {
   int N;
   cin >> N;
-  vector<int> memo(N + 1, -1);
+  vector<long long> memo(N + 1, -1);
   cout << fibo(N, memo) << endl;
 }
