@@ -74,6 +74,20 @@
     "unordered_set": "cpp",
     "algorithm": "cpp",
     "format": "cpp",
-    "span": "cpp"
+    "span": "cpp",
+    "__hash_table": "cpp",
+    "__split_buffer": "cpp",
+    "__tree": "cpp",
+    "forward_list": "cpp",
+    "initializer_list": "cpp",
+    "list": "cpp",
+    "regex": "cpp",
+    "valarray": "cpp",
+    "generator": "cpp",
+    "ranges": "cpp",
+    "text_encoding": "cpp",
+    "queue": "cpp",
+    "stack": "cpp",
+    "random": "cpp"
   }
 }
