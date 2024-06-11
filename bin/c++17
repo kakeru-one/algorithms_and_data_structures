@@ -1,4 +1,27 @@
 #!/bin/bash
 
-g++ -std=c++17 $1.cpp -o $1
-$1
+# コンパイルするソースファイルのパス
+source_file="$1"
+
+# ソースファイルの拡張子を除いた基本名を取得
+base_name=$(basename "$source_file" .cpp)
+
+# ソースファイルのディレクトリを取得
+source_dir=$(dirname "$source_file")
+
+# 出力ディレクトリのパス（ソースファイルのあるディレクトリのoutputフォルダ）
+output_dir="$source_dir/output"
+
+# 出力ディレクトリが存在しない場合は作成
+if [ ! -d "$output_dir" ]; then
+    mkdir -p "$output_dir"
+fi
+
+# 実行バイナリの完全パス
+executable_path="$output_dir/$base_name"
+
+# C++ファイルをコンパイルする
+g++ -std=c++17 "$source_file" -o "$executable_path"
+
+# 実行バイナリの実行をする
+"$executable_path"
