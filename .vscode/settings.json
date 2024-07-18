@@ -88,6 +88,8 @@
     "text_encoding": "cpp",
     "queue": "cpp",
     "stack": "cpp",
-    "random": "cpp"
+    "random": "cpp",
+    "*.tcc": "cpp",
+    "iosfwd": "cpp"
   }
 }
