@@ -90,6 +90,12 @@
     "stack": "cpp",
     "random": "cpp",
     "*.tcc": "cpp",
-    "iosfwd": "cpp"
+    "iosfwd": "cpp",
+    "barrier": "cpp",
+    "latch": "cpp",
+    "limits": "cpp",
+    "semaphore": "cpp",
+    "source_location": "cpp",
+    "istream": "cpp"
   }
 }

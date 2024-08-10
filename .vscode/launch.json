@@ -12,7 +12,16 @@
       "externalConsole": false,
       "MIMode": "lldb",
       "preLaunchTask": "C/C++: clang++ build active file"
-    }
+    },
+    {
+      "name": "c_debug",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "preLaunchTask": "c_build"
+  }
   ],
   "version": "2.0.0"
 }

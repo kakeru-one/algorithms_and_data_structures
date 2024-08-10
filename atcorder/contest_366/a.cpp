@@ -2,10 +2,11 @@
 using namespace std;
 
 int main() {
-  string S, T;
-  cin >> S >> T;
+  int N, T, A;
+  cin >> N >> T >> A;
+  int border = N / 2;
 
-  if ((S == "AtCoder") && (T == "Land")) {
+  if ((T > border) || (A > border)) {
     cout << "Yes" << endl;
   } else {
     cout << "No" << endl;
