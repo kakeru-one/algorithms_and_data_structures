@@ -16,10 +16,11 @@ int main() {
     getline(cin, line); // 一行を読み込む
 
     stringstream ss(line);
-    int num;
-    while (ss >> num) {
-      queries[i].push_back(num); // 空白区切りで数字を格納
-    }
+    int first, second;
+    ss >> first >> second; // 2つの数値を取得
+    queries[i].push_back(first);
+    queries[i].push_back(second);
+
     if (queries[i][0] == 1) {
       // queries[i][1]をball_boxesの末尾に入れる
       ball_boxes.push_back(queries[i][1]);
