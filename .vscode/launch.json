@@ -1,27 +1,15 @@
 {
   "configurations": [
     {
-      "name": "C/C++: clang++ アクティブ ファイルのビルドとデバッグ",
-      "type": "cppdbg",
-      "request": "launch",
-      "program": "${fileDirname}/${fileBasenameNoExtension}",
-      "args": [],
-      "stopAtEntry": false,
-      "cwd": "${fileDirname}",
-      "environment": [],
-      "externalConsole": false,
-      "MIMode": "lldb",
-      "preLaunchTask": "C/C++: clang++ build active file"
-    },
-    {
-      "name": "c_debug",
+      "name": "(lldb) Launch",
       "type": "lldb",
       "request": "launch",
       "program": "${fileDirname}/${fileBasenameNoExtension}",
       "args": [],
-      "cwd": "${fileDirname}",
-      "preLaunchTask": "c_build"
-  }
+      "cwd": "${workspaceFolder}",
+      "externalConsole": true,
+      "preLaunchTask": "C/C++: clang++ build active file"
+    }
   ],
   "version": "2.0.0"
 }
