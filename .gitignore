@@ -1,8 +1,8 @@
-scripts/catch_up/*
-/scripts/subjects_in_book/chapter3/output
-/scripts/subjects_in_book/chapter4/output
-!/scripts/catch_up/chapter1
-!/scripts/catch_up/chapter2
-!/scripts/catch_up/chapter3
-/scripts/catch_up/chapter2/output
-/scripts/catch_up/chapter3/output
+books/catch_up/*
+/books/subjects_in_book/chapter3/output
+/books/subjects_in_book/chapter4/output
+!/books/catch_up/chapter1
+!/books/catch_up/chapter2
+!/books/catch_up/chapter3
+/books/catch_up/chapter2/output
+/books/catch_up/chapter3/output
