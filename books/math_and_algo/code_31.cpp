@@ -1,33 +1,34 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int main() {
-	// 入力
-	cin >> N;
-  vector<long long> A(N);
+  int N;
+  cin >> N;
+
+  // 要素数 500009 の長さを持つ配列を定義する
+  vector<long long> A(N + 1);
+  vector<long long> dp1(N + 1);
+  vector<long long> dp2(N + 1);
 	for (int i = 1; i <= N; i++) cin >> A[i];
 
-  // NOTE: dp[i][j]
-  // iは何日目時点までか？
-  // jは何日目に最後に勉強したか？
-  vector<vector<int>> dp(N, vector<int>(N));
-
-  // N日目時点での実力の最大値
-  // vector<long long> dp(N + 1);
-  bool yesterday_study = false
+  // 配列の初期化
+  // NOTE:
+  // dp1はi日目に勉強した時の最大値。
+  // dp2はi日目に勉強しなかった時の最大値。
+	dp1[0] = 0;
+	dp2[0] = 0;
 
 	for (int i = 1; i <= N; i++) {
-    // 勉強する or 勉強しない
-    if (yesterday_study) {
-      dp[i][i] = max(dp[i - 1], dp[i - 2] + A[i])
-      yesterday_study = false;
-    } else {
-      dp[i][i] = dp[i - 1] + A[i];
-      yesterday_study = true;
-    }
+    // [CASE]: i日目に勉強する or しない
+    // 勉強する場合は、dp2[i-1]にA[i]を足す
+    dp1[i] = dp2[i-1] + A[i];
 
-
-    dp[N] =
+    // 勉強しない場合は、dp1[i - 1]とdp2[i-1]の最大値
+    dp2[i] = max(dp1[i - 1], dp2[i - 1]);
   }
+
+  // dp1[N], dp2[N]の最大値が答え
+  cout << max(dp1[N], dp2[N]) << endl;
 	return 0;
 }
