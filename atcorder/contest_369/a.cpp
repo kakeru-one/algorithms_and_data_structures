@@ -2,7 +2,7 @@
 using namespace std;
 
 bool isNonZeroInteger(int n) {
-    return (n != 0) && n == floor(n);
+    return (n != 0);
 }
 
 int main() {
